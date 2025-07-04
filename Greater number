@@ -1,0 +1,27 @@
+# Vp-lab-project-2
+Greater number 
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace consoleApplication3
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            int b = 20;
+
+            Console.WriteLine(a>b);    
+            Console.WriteLine(b>a);
+            Console.WriteLine(a >= b);
+            Console.WriteLine(b >= a);
+
+            bool x = a==b;
+            Console.WriteLine(x);
+        }
+    }
+
+}
