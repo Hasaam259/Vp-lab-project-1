@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+
+namespace consoleApplication3
+{
+    public class Program
+    {
+        static void ageCalculator()
+        {
+            Console.WriteLine("Enter your birth date (date)");
+            int day = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your birth month (month ");
+            int month = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your birth year ( year): ");
+            int year = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Enter the current date (date ): ");
+            int currentDate = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the current month (month): ");
+            int currentMonth = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the current year (year): ");
+            int currentYear = int.Parse(Console.ReadLine());
+
+            int age = currentDate -day;
+            int monthAge = currentMonth - month;
+            int yearAge = currentYear - year;
+            Console.WriteLine("Your are know "+yearAge+"  "+monthAge+ "month   " + age+"days");
+        }
+        public static void Main(string[] args)
+        {
+           ageCalculator(); 
+        }
+    }
